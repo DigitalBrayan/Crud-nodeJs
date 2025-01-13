@@ -173,7 +173,8 @@ router.patch('/:id', getBook, async(req, res) => {
      const updateBook = await book.save();
      res.json(updateBook);
   } catch (error) {
-   res.status(400).json({message: error.message})
+   res.status(400).json({message: error.message}) 
+   
   }
  })
 
