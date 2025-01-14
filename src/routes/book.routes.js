@@ -174,7 +174,6 @@ router.patch('/:id', getBook, async(req, res) => {
      res.json(updateBook);
   } catch (error) {
    res.status(400).json({message: error.message}) 
-   
   }
  })
 
